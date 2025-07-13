@@ -115,7 +115,7 @@ export default function App() {
     }));
   }
 
-  if (quizState.isStarted) {
+  if (!quizState.isStarted) {
     return (
       <button
         onClick={() => setQuizState((prev) => ({ ...prev, isStarted: true }))}
